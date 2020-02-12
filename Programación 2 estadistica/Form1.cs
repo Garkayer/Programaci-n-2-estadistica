@@ -21,7 +21,17 @@ namespace Programación_2_estadistica
         private void btnMediaAritmetica_Click(object sender, EventArgs e)
         {
             //split => divide una cadena en base a un delimitador (patron) y devuelve una matriz
-            lblRespuesta_Serie.Text = "X=" + objEstadistica.media(txtSerie.Text.Split(','));
+            lblRespuesta.Text = "X=" + objEstadistica.media(txtSerie.Text.Split(','));
+        }
+
+        private void btnCalcularMedia_Click(object sender, EventArgs e)
+        {
+            lblRespuesta.Text = "Tipica" + objEstadistica.Tipica(txtSerie.Text.Split(','));
+        }
+
+        private void btnCalcularEstandar_Click(object sender, EventArgs e)
+        {
+            lblRespuesta.Text = "Estandar" + objEstadistica.estandar(txtSerie.Text.Split(','));
         }
     }
 }

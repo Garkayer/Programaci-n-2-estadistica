@@ -30,8 +30,10 @@
         {
             this.lblSerie = new System.Windows.Forms.Label();
             this.txtSerie = new System.Windows.Forms.TextBox();
-            this.lblRespuesta_Serie = new System.Windows.Forms.Label();
+            this.lblRespuesta = new System.Windows.Forms.Label();
             this.btnMediaAritmetica = new System.Windows.Forms.Button();
+            this.btnCalcularEstandar = new System.Windows.Forms.Button();
+            this.btnCalcularTipica = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSerie
@@ -50,14 +52,14 @@
             this.txtSerie.Size = new System.Drawing.Size(100, 20);
             this.txtSerie.TabIndex = 1;
             // 
-            // lblRespuesta_Serie
+            // lblRespuesta
             // 
-            this.lblRespuesta_Serie.AutoSize = true;
-            this.lblRespuesta_Serie.Location = new System.Drawing.Point(13, 79);
-            this.lblRespuesta_Serie.Name = "lblRespuesta_Serie";
-            this.lblRespuesta_Serie.Size = new System.Drawing.Size(12, 13);
-            this.lblRespuesta_Serie.TabIndex = 2;
-            this.lblRespuesta_Serie.Text = "x̄";
+            this.lblRespuesta.AutoSize = true;
+            this.lblRespuesta.Location = new System.Drawing.Point(13, 79);
+            this.lblRespuesta.Name = "lblRespuesta";
+            this.lblRespuesta.Size = new System.Drawing.Size(12, 13);
+            this.lblRespuesta.TabIndex = 2;
+            this.lblRespuesta.Text = "x̄";
             // 
             // btnMediaAritmetica
             // 
@@ -69,13 +71,35 @@
             this.btnMediaAritmetica.UseVisualStyleBackColor = true;
             this.btnMediaAritmetica.Click += new System.EventHandler(this.btnMediaAritmetica_Click);
             // 
+            // btnCalcularEstandar
+            // 
+            this.btnCalcularEstandar.Location = new System.Drawing.Point(97, 129);
+            this.btnCalcularEstandar.Name = "btnCalcularEstandar";
+            this.btnCalcularEstandar.Size = new System.Drawing.Size(121, 23);
+            this.btnCalcularEstandar.TabIndex = 4;
+            this.btnCalcularEstandar.Text = "Calcular Estandar";
+            this.btnCalcularEstandar.UseVisualStyleBackColor = true;
+            this.btnCalcularEstandar.Click += new System.EventHandler(this.btnCalcularEstandar_Click);
+            // 
+            // btnCalcularTipica
+            // 
+            this.btnCalcularTipica.Location = new System.Drawing.Point(12, 174);
+            this.btnCalcularTipica.Name = "btnCalcularTipica";
+            this.btnCalcularTipica.Size = new System.Drawing.Size(107, 23);
+            this.btnCalcularTipica.TabIndex = 5;
+            this.btnCalcularTipica.Text = "Calcular Tipica";
+            this.btnCalcularTipica.UseVisualStyleBackColor = true;
+            this.btnCalcularTipica.Click += new System.EventHandler(this.btnCalcularMedia_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnCalcularTipica);
+            this.Controls.Add(this.btnCalcularEstandar);
             this.Controls.Add(this.btnMediaAritmetica);
-            this.Controls.Add(this.lblRespuesta_Serie);
+            this.Controls.Add(this.lblRespuesta);
             this.Controls.Add(this.txtSerie);
             this.Controls.Add(this.lblSerie);
             this.Name = "Form1";
@@ -89,8 +113,10 @@
 
         private System.Windows.Forms.Label lblSerie;
         private System.Windows.Forms.TextBox txtSerie;
-        private System.Windows.Forms.Label lblRespuesta_Serie;
+        private System.Windows.Forms.Label lblRespuesta;
         private System.Windows.Forms.Button btnMediaAritmetica;
+        private System.Windows.Forms.Button btnCalcularEstandar;
+        private System.Windows.Forms.Button btnCalcularTipica;
     }
 }
 
