@@ -26,7 +26,7 @@ namespace Programación_2_estadistica
 
         private void btnCalcularMedia_Click(object sender, EventArgs e)
         {
-            lblRespuesta.Text = "Tipica" + objEstadistica.Tipica(txtSerie.Text.Split(','));
+            lblRespuesta.Text = "Tipica" + objEstadistica.tipica(txtSerie.Text.Split(','));
         }
 
         private void btnCalcularEstandar_Click(object sender, EventArgs e)
